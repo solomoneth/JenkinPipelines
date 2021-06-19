@@ -1,0 +1,24 @@
+{
+  "name": "ci-cd-pipeline",
+  "version": "1.0.0",
+  "description": "```bash # add the NodeSource yum repository to your system: curl -sL https://rpm.nodesource.com/setup_12.x | sudo bash -",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/solomoneth/ci-cd-pipeline.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/solomoneth/ci-cd-pipeline/issues"
+  },
+  "homepage": "https://github.com/solomoneth/ci-cd-pipeline#readme",
+  "devDependencies": {
+    "mocha": "^9.0.1"
+  }
+}
