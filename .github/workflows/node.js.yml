@@ -16,8 +16,7 @@ jobs:
 	os: [macos-latest, windows-latest, ubuntu-18.04]
 	exclude:
           - os: macos-latest
-            node-version: 10		
-		
+            node: 10		
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
