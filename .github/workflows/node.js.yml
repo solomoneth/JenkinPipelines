@@ -13,6 +13,9 @@ jobs:
      matrix:
       os: [ubuntu-18.04, ubuntu-20.04]
       node: [10, 12, 14]
+      exclude:
+       - os: macos-latest
+         node: 8
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
