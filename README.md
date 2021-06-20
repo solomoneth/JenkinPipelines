@@ -14,3 +14,25 @@ npm --version
 # setup a new package
 npm init
 
+
+
+
+# initialize git repo
+git init
+
+# add remote origin
+git remote add origin https://github.com/<your github username>/<repo name>.git
+
+# set global configs
+git config --global user.email "email@example.com"
+git config --global user.name "myusername"
+
+# add tracked files
+git add .
+
+# commit changes
+git commit -m "initial commit"
+
+# push to master
+# click cancel on code server
+git push origin master
