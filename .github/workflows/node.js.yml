@@ -2,8 +2,8 @@ name: Build
 
 on:
   push:
-    branches: [ $default-branch ]
-
+    paths:
+      - '**.js'
 
 jobs:
   build:
@@ -13,11 +13,10 @@ jobs:
     strategy:
       matrix:
 	os: [macos-latest, windows-latest, ubuntu-18.04]
-    	node: [8, 10, 12, 14]
+	node: [10, 12, 14]
 	exclude:
           - os: macos-latest
             node: 10		
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
