@@ -13,8 +13,8 @@ jobs:
     strategy:
       matrix:
         node-version: [12.x, 14.x, 16.x]
-		os: [macos-latest, windows-latest, ubuntu-18.04]
-		exclude:
+	os: [macos-latest, windows-latest, ubuntu-18.04]
+	exclude:
           - os: macos-latest
             node-version: 10		
 		
