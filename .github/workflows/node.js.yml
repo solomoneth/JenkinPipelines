@@ -12,13 +12,12 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [12.x, 14.x, 16.x]
 	os: [macos-latest, windows-latest, ubuntu-18.04]
+    	node: [8, 10, 12, 14]
 	exclude:
           - os: macos-latest
             node: 10		
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-
     steps:
     - uses: actions/checkout@v2
     - name: Use Node.js ${{ matrix.node-version }}
