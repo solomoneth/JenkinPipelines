@@ -5,6 +5,7 @@ const server = http.createServer((req, res) => {
         res.end('<h1>Hello, World</h1>');
     }
 });
+console.log("test")
 
 const PORT = process.env.PORT || 5000;
 
