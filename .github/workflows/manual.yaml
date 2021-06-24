@@ -1,9 +1,4 @@
 name: Build
-
-on:
-  push:
-    branches:
-      - master
       
 on: 
   workflow_dispatch:
